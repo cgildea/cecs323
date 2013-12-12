@@ -122,7 +122,7 @@ ________________________________________________________________________________
 
 ### Abort
 *	All the changes made during the transaction by this transaction are not made to the database. The result of this is as if the transaction was never started.  
-  
+
 #### Reasons for Abort
 *	 System crash    
 *	 Transcation aborted by system    
@@ -142,14 +142,14 @@ ________________________________________________________________________________
 ## ACID
 *	 The execution of each transaction must maintain the relationship between the database state and the enterprise state    
 
-### Atomicity
-*	Transaction is either performed in its entirety or not performed at all.   
-### Consistency
-*	Transaction must take the database from one consistent state to another.    
-### Isolation
+### Atomicity  
+*	Transaction is either performed in its entirety or not performed at all.       
+### Consistency   
+*	Transaction must take the database from one consistent state to another.       
+### Isolation   
 *	Transaction should appear as though it is being executed in isolation from other transactions.    
-### Durability
-*	Changes applied to the database by a committed transaction must persist, even if the system fails before all changes reflected on disk.    
+### Durability     
+*	Changes applied to the database by a committed transaction must persist, even if the system fails before all changes reflected on disk.     
 
 ### Atomicity
 *	 A real-world event either happens or does not happen   
