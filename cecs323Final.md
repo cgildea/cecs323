@@ -1,6 +1,6 @@
 ## Normal Forms
 ### First normal form 
-..*  All attributes must be atomic, and no repeating groups
+..*All attributes must be atomic, and no repeating groups
 	..* Eliminate multi-valued attributes, and Eliminate repeated attributes
 ### Second normal form 
 ..*  First normal form, and no partial functional dependencies
