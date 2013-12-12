@@ -1,9 +1,9 @@
 ## Normal Forms
 ### First normal form 
-..*All attributes must be atomic, and no repeating groups
-	..* Eliminate multi-valued attributes, and Eliminate repeated attributes
+  *All attributes must be atomic and no repeating groups
+	..* Eliminate multi-valued attributes and Eliminate repeated attributes
 ### Second normal form 
-..*  First normal form, and no partial functional dependencies
+*  First normal form, and no partial functional dependencies
 	..* Eliminate subkeys (where the subkey is part of a composite primary key)
 ### Third normal form 
 ..* Second normal form, and no transitive functional dependencies
