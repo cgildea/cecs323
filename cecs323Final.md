@@ -121,15 +121,16 @@ ________________________________________________________________________________
 *	Any changes made during the transaction by this transaction are committed to the database.    
 
 ### Abort
-*	All the changes made during the transaction by this transaction are not made to the database. The result of this is as if the transaction was never started.    
-	#### Reasons for Abort
-	*	 System crash    
-	*	 Transcation aborted by system    
-		*	 Execution cannot be made atomic (a site is down)    
-		*	 Execution did not maintain database consistency (integrity constraint is violated)    
-		*	 Execution was not isolated
-		*	 Resources not available (deadlock)   
-	*	 Transaction requests to roll back   
+*	All the changes made during the transaction by this transaction are not made to the database. The result of this is as if the transaction was never started.  
+  
+#### Reasons for Abort
+*	 System crash    
+*	 Transcation aborted by system    
+	*	 Execution cannot be made atomic (a site is down)    
+	*	 Execution did not maintain database consistency (integrity constraint is violated)    
+	*	 Execution was not isolated
+	*	 Resources not available (deadlock)   
+*	 Transaction requests to roll back   
   
 ### Schedules
 *	 A transaction schedule is a tabular representation of how a set of transactions were executed over time. This is useful when examining problem scenarios. Within the diagrams various nomenclatures are used:    
@@ -142,13 +143,13 @@ ________________________________________________________________________________
 *	 The execution of each transaction must maintain the relationship between the database state and the enterprise state    
 
 ### Atomicity
-	*	 Transaction is either performed in its entirety or not performed at all.   
+*	Transaction is either performed in its entirety or not performed at all.   
 ### Consistency
-	*	 Transaction must take the database from one consistent state to another.    
+*	Transaction must take the database from one consistent state to another.    
 ### Isolation
-	*	 Transaction should appear as though it is being executed in isolation from other transactions.    
+*	Transaction should appear as though it is being executed in isolation from other transactions.    
 ### Durability
-	*	 Changes applied to the database by a committed transaction must persist, even if the system fails before all changes reflected on disk.    
+*	Changes applied to the database by a committed transaction must persist, even if the system fails before all changes reflected on disk.    
 
 ### Atomicity
 *	 A real-world event either happens or does not happen   
@@ -173,9 +174,9 @@ ________________________________________________________________________________
 *	 The system must ensure that once a transaction commits, its effect on the database state is not lost in spite of subsequent failures    
 *	 Effects of committed transactions must survive DBMS crashes    
 *	 How is durability achieved?      
-	*	 DBMS manipulates data in memory; forcing all changes to disk at the end of every transaction is very expensive     
-	*	 Logging    
-#### Implementing Durability    
+	*	DBMS manipulates data in memory; forcing all changes to disk at the end of every transaction is very expensive     
+	*	Logging       
+#### Implementing Durability     
 *	 Database stored redundantly on mass storage devices to protect against media failure   
 *	 Architecture of mass storage devices affects type of media failures that can be tolerated    
 *	 Related to Availability:  extent to which a (possibly distributed) system can provide service despite failure    
